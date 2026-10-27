@@ -47,7 +47,7 @@ write.csv(prepared, file.path("data", "maize_g2f_environment_means.csv"), row.na
 manifest <- data.frame(source = "G2F curated maize trials",
                        doi = "10.6084/m9.figshare.22776806",
                        license = "CC BY 4.0",
-                       source_plot_records = nrow(phenotypes),
+                       usable_plot_records = nrow(phenotypes),
                        prepared_hybrid_environment_means = nrow(prepared),
                        environments = length(unique(prepared$year_loc)),
                        genotypes = length(unique(prepared$genotype)),
